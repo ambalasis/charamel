@@ -40,7 +40,7 @@ class Detector:
 
     def __init__(
         self,
-        encodings: Sequence[Encoding] = tuple(Encoding),
+        encodings: Sequence[Encoding] = [i._value_ for i in tuple(Encoding)],
         min_confidence: float = 0.0,
     ):
         """
